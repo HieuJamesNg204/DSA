@@ -130,8 +130,12 @@ public class _09_BinarySearchTree {
         System.out.println("Contain value 17? " + tree.search(17));
         System.out.println("Contain value 10? " + tree.search(10));
 
-        tree.remove(13);
-        System.out.println("Updated tree:");
-        tree.display();
+        try {
+            tree.remove(13);
+            System.out.println("Updated tree:");
+            tree.display();
+        } catch (NoSuchElementException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
     }
 }
