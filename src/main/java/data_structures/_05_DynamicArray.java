@@ -15,6 +15,11 @@ public class _05_DynamicArray {
         System.out.println("Updated array: " + nums);
         System.out.println("Size: " + nums.size());
 
+        System.out.println("Element at index 2: " + nums.get(2));
+
+        nums.set(2, 10);
+        System.out.println("Element at index 2 after being updated: " + nums.get(2));
+
         nums.remove(1);
         System.out.println("After removing the element at index 1: " + nums);
     }
